@@ -1,0 +1,35 @@
+/* Restablecer márgenes, rellenos y modelo de caja para todos los elementos */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.animated {
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  );
+  background-size: 200% 100%;
+  animation: animated-background 10s infinite ease-in-out;
+}
+
+@keyframes animated-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
+
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);z
