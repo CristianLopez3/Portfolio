@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* GENERAL ASPECTS */
+/* --------------------------------------------------------------------------------------------------------- */
+
+:root {
+  /* Colors */
+  --background-black: #000;
+  --text-color: #FFF;
+  --pink: #D758EB;
+  --orange: #F27D0B;
+  --gray: #3F3D3D;
+  /* Border */
+  --border-radius: 15px;
+  --tittles-size: 60px;
+}
+
+/* Restablecer márgenes, rellenos y modelo de caja para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--background-black);
+}
+
+.gap {
+  margin: 0 20px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* HEADER STYES */
+/* --------------------------------------------------------------------------------------------------------- */
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+header::before{
+  content: "";
+  height: 1000px;
+  width: 1000px;
+  background: url(../img/back-blur.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  left: -300px;
+  top: -60px;
+}
+
+header nav ul li a.nav-link {
+  color: var(--text-color);
+}
+
+header nav ul li a.nav-link:hover {
+  color: var(--orange);
+}
+
+header .my-hero {
+  padding: 8% 0;
+  color: var(--text-color);
+  margin: 0 auto;
+  text-align: center;
+}
+
+header .my-hero h2 {
+  font-weight: 300;
+}
+
+
+header .my-hero #name {
+  padding: 15px 0;
+  background: linear-gradient(90deg, #EF7322 9.98%, #D714F5 25.54%, #EA604C 40.97%, #D714F5 55.18%, #F27D0B 72.75%, #D714F5 84.42%);
+  background-clip: text;
+  font-size: 7rem;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  /* aplicamos los estilos para el clip en el text */
+  -webkit-text-fill-color: transparent;
+  /* Le decimos que el color del text va a ser transparente */
+  text-transform: uppercase;
+}
+
+
+header .my-hero h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+header .my-hero h1>span{
+  color: var(--orange);
+}
+
+header .my-hero button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  border: none;
+  padding: 20px 100px;
+  color: var(--text-color);
+  border-radius: 25px;
+  background: linear-gradient(270deg, #F27D0B 0.32%, rgba(242, 125, 11, 0.00) 71.37%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE DESIGN */
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 985px) {
+  header .my-hero #name {
+    font-size: 5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  header .my-hero #name {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  header .my-hero #name {
+    font-size: 2rem;
+  }
+}

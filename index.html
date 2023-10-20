@@ -5,47 +5,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio - practice</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/Styles.css">
 </head>
 
 <body>
 
   <!-- HEADER  -->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+  <header class="container">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Onorded list for sections, replace values in href -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Know me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Technologies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" aria-disabled="true">Contact</a>
             </li>
           </ul>
         </div>
+
+        <a class="navbar-brand gap" href="https://github.com/CristianLopez3">
+          <img src="./img/social/github.svg" alt="git">
+        </a>
+        <a class="navbar-brand gap" href="#">
+          <img src="./img/social/gmail.svg" alt="git">
+        </a>
+        <a class="navbar-brand gap" href="#">
+          <img src="./img/social/linkedin.svg" alt="git">
+        </a>
+
       </div>
     </nav>
+
+    <!-- Hero -->
+
+    <div class="my-hero container">
+      <h2>
+        Hi there, I'm <br>
+        <span id="name"> Cristian Lopez</span>
+      </h2>
+
+      <h1>I'm a <span>Backend Developer</span> eager to improve my skills</h1>
+
+      <button>Download CV</button>
+    </div>
   </header>
 
 
+  <!-- MAIN  -->
+  <main>
+
+    <!-- KNOW ME SECTION -->
+    <section id="know-me"></section>
+
+    <!-- TECHNOLOGIES SECTION -->
+    <section id="technologies"></section>
+
+    <!-- PROJECTs SECTION -->
+    <section id="projects"></section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact"></section>
+
+
+  </main>
+
+
+  <!-- FOOTER  -->
+  <footer></footer>
 
 
 
 
-  <script src="./js/app.js"></script>
+
+
+  <script src="./js/Main.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.js"></script>
 </body>
 
