@@ -13,8 +13,10 @@
   --orange: #F27D0B;
   --gray: #3F3D3D;
   /* Border */
-  --border-radius: 15px;
-  --tittles-size: 60px;
+  --border-radius: 20px;
+  --tittles-size: 72px;
+  --p-size: 20px;
+  --p-weight: 300;
 }
 
 /* Restablecer márgenes, rellenos y modelo de caja para todos los elementos */
@@ -24,6 +26,8 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
+
+
 
 html {
   font-size: 16px;
@@ -35,6 +39,18 @@ body {
 
 .gap {
   margin: 0 20px;
+}
+
+.span-orange{
+  font-style: italic;
+  color: var(--orange);
+  font-weight: 500;
+}
+
+.span-pink{
+  font-style: italic;
+  color: var(--pink);
+  font-weight: 500;
 }
 
 
@@ -72,7 +88,7 @@ header nav ul li a.nav-link:hover {
 }
 
 header .my-hero {
-  padding: 8% 0;
+  padding: 13% 0;
   color: var(--text-color);
   margin: 0 auto;
   text-align: center;
@@ -111,15 +127,65 @@ header .my-hero button {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 3rem;
-  border: none;
   padding: 20px 100px;
   color: var(--text-color);
-  border-radius: 25px;
+  border: none;
+  border-radius: var(--border-radius);
   background: linear-gradient(270deg, #F27D0B 0.32%, rgba(242, 125, 11, 0.00) 71.37%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: .5s;
+}
+
+header .my-hero button:hover {
+  transform: scale(.9);
 }
 
 
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE DESIGN */
+/* --------------------------------------------------------------------------------------------------------- */
+
+#know-me{
+  padding: rem;
+  color: var(--text-color);
+  position: relative;
+  z-index: 1;
+}
+
+#know-me::before{
+  content: "";
+  height: 1000px;
+  width: 1000px;
+  background: url(../img/back-blur.png);
+  background-size: cover;
+  transform: rotate(50deg);
+  position: absolute;
+  z-index: 10;
+  right: -215px;
+  top: 0;
+}
+
+#know-me .know-me-area{
+  padding: 2rem;
+}
+
+#know-me h2{
+  font-size: var(--tittles-size);
+  margin-bottom: 30px;
+}
+
+#know-me p{
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  width: 80%;
+  word-wrap: break-word;  
+}
+
+#know-me .know-me-avatar{
+  position: relative;
+  z-index: 100;
+}
 
 
 
