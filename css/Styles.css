@@ -226,14 +226,25 @@ header .my-hero button:hover {
   margin-bottom: 4rem;
 }
 
+#technologies .tech-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-#technologies .technologies-container{
+
+#technologies .tech-center .technologies-container{
   margin: 0 auto;
   padding: 2rem;  
-  height: 500px;
+  height: 250px;
   background: var(--background-opacity);
   border-radius: var(--border-radius);
   transition: .5s;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #technologies .technologies-container .card-tech{
