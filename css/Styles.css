@@ -80,7 +80,7 @@ h2 {
   background: url(../img/back-blur.png);
   background-size: cover;
   position: absolute;
-  z-index: 10;
+  z-index: -1;
   left: -300px;
   top: -60px;
 }
@@ -234,7 +234,6 @@ h2 {
   margin: 0 auto;
   padding: 2rem;
   height: 250px;
-  background: var(--background-opacity);
   border-radius: var(--border-radius);
   transition: 0.5s;
   overflow-x: hidden;
@@ -242,6 +241,31 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+}
+
+#col-tech{
+  position: relative;
+}
+
+#technologies .absolute-card{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #000;
+  color: #fff;
+  z-index: 9999;
+  text-align: left;
+  padding: 2rem .5rem;
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  background: linear-gradient(
+    35deg,
+    #f27d0b 27.75%,
+    #d714f5 70.42%
+  )
 }
 
 #technologies .technologies-container .card-tech {
@@ -253,7 +277,9 @@ h2 {
   transition: 0.4s;
   height: 8rem;
   margin-bottom: 2rem;
+  position: relative;
 }
+
 #technologies .technologies-container .card-tech .tech-content img {
   margin-bottom: 1rem;
 }
