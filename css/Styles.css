@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* GENERAL ASPECTS */
@@ -8,16 +7,16 @@
 :root {
   /* Colors */
   --background-black: #000;
-  --text-color: #FFF;
-  --pink: #D758EB;
-  --orange: #F27D0B;
-  --gray: #3F3D3D;
+  --text-color: #fff;
+  --pink: #d758eb;
+  --orange: #f27d0b;
+  --gray: #3f3d3d;
   /* Border */
   --border-radius: 1.3rem;
   --tittles-size: 4.2rem;
   --p-size: 1.4rem;
   --p-weight: 300;
-  --background-opacity: #D9D9D910;
+  --background-opacity: #d9d9d910;
 }
 
 /* Restablecer márgenes, rellenos y modelo de caja para todos los elementos */
@@ -25,9 +24,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-
 
 html {
   font-size: 16px;
@@ -38,39 +36,36 @@ body {
   overflow-x: hidden;
 }
 
-
-section{
+section {
   padding: 5rem 1rem;
 }
 
-h2{
+h2 {
   color: var(--text-color);
   font-size: var(--tittles-size);
 }
-
 
 .gap {
   margin: 0 20px;
 }
 
-.span-orange{
+.span-orange {
   font-style: italic;
   color: var(--orange);
   font-weight: 500;
 }
 
-.span-pink{
+.span-pink {
   font-style: italic;
   color: var(--pink);
   font-weight: 500;
 }
 
-
 /* --------------------------------------------------------------------------------------------------------- */
-/* HEADER STYES */
+/* #header STYES */
 /* --------------------------------------------------------------------------------------------------------- */
 
-header {
+#header {
   width: 100%;
   min-height: 100vh;
   padding: 1rem;
@@ -78,7 +73,7 @@ header {
   z-index: 1;
 }
 
-header::before{
+#header::before {
   content: "";
   height: 1000px;
   width: 1000px;
@@ -90,32 +85,39 @@ header::before{
   top: -60px;
 }
 
-header nav ul li a.nav-link {
+#header nav ul li a.nav-link {
   color: var(--text-color);
   position: relative;
   z-index: 80;
   margin: 0 10px;
 }
 
-header nav ul li a:hover {
+#header nav ul li a:hover {
   color: var(--orange) !important;
 }
 
-header .my-hero {
+#header .my-hero {
   padding: 13% 0;
   color: var(--text-color);
   margin: 0 auto;
   text-align: center;
 }
 
-header .my-hero h2 {
+#header .my-hero h2 {
   font-weight: 300;
 }
 
-
-header .my-hero #name {
+#header .my-hero #name {
   padding: 15px 0;
-  background: linear-gradient(90deg, #EF7322 9.98%, #D714F5 25.54%, #EA604C 40.97%, #D714F5 55.18%, #F27D0B 72.75%, #D714F5 84.42%);
+  background: linear-gradient(
+    90deg,
+    #ef7322 9.98%,
+    #d714f5 25.54%,
+    #ea604c 40.97%,
+    #d714f5 55.18%,
+    #f27d0b 72.75%,
+    #d714f5 84.42%
+  );
   background-clip: text;
   font-size: 7rem;
   font-weight: 600;
@@ -126,18 +128,17 @@ header .my-hero #name {
   text-transform: uppercase;
 }
 
-
-header .my-hero h1 {
+#header .my-hero h1 {
   font-size: 2rem;
   color: var(--text-color);
   font-weight: 300;
 }
 
-header .my-hero h1>span{
+#header .my-hero h1 > span {
   color: var(--orange);
 }
 
-header .my-hero button {
+#header .my-hero button {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 3rem;
@@ -145,29 +146,30 @@ header .my-hero button {
   color: var(--text-color);
   border: none;
   border-radius: var(--border-radius);
-  background: linear-gradient(270deg, #F27D0B 0.32%, rgba(242, 125, 11, 0.00) 71.37%);
+  background: linear-gradient(
+    270deg,
+    #f27d0b 0.32%,
+    rgba(242, 125, 11, 0) 71.37%
+  );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-header .my-hero button:hover {
-  transform: scale(.9);
+#header .my-hero button:hover {
+  transform: scale(0.9);
 }
-
-
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* RESPONSIVE DESIGN */
 /* --------------------------------------------------------------------------------------------------------- */
 
-#know-me{
+#know-me {
   padding: rem;
   color: var(--text-color);
   position: relative;
-  
 }
 
-#know-me::before{
+#know-me::before {
   content: "";
   height: 1000px;
   width: 1000px;
@@ -180,66 +182,61 @@ header .my-hero button:hover {
   top: 0;
 }
 
-#know-me .know-me-area{
+#know-me .know-me-area {
   padding: 2rem;
 }
 
-#know-me h2{
+#know-me h2 {
   margin-bottom: 1.8rem;
 }
 
-#know-me p{
+#know-me p {
   font-size: var(--p-size);
   font-weight: var(--p-weight);
   width: 80%;
-  word-wrap: break-word;  
+  word-wrap: break-word;
 }
 
-#know-me .know-me-avatar{
+#know-me .know-me-avatar {
   position: relative;
   z-index: 100;
 }
 
-
-
-.navbar-brand svg path{
-  fill: var(--text-color);  
-  transition: fill 0.3s; 
+.navbar-brand svg path {
+  fill: var(--text-color);
+  transition: fill 0.3s;
 }
-
 
 .navbar-brand:hover path {
-  fill: #FFA500;
+  fill: #ffa500;
 }
-
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* TECHNOLOGIES SECTION */
 /* --------------------------------------------------------------------------------------------------------- */
 
-#technologies{
+#technologies {
   padding: 5rem 1rem;
 }
 
-#technologies .row h2{
+#technologies .row h2 {
   text-align: center;
   margin-bottom: 4rem;
 }
 
-#technologies .tech-center{
+#technologies .tech-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-#technologies .tech-center .technologies-container{
+#technologies .tech-center .technologies-container {
   margin: 0 auto;
-  padding: 2rem;  
+  padding: 2rem;
   height: 250px;
   background: var(--background-opacity);
   border-radius: var(--border-radius);
-  transition: .5s;
+  transition: 0.5s;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -247,13 +244,13 @@ header .my-hero button:hover {
   flex-wrap: wrap;
 }
 
-#technologies .technologies-container .card-tech{
+#technologies .technologies-container .card-tech {
   color: var(--text-color);
-  background: #D9D9D920;
+  background: #d9d9d920;
   padding: 1rem 1.5rem;
   text-align: center;
   border-radius: var(--border-radius);
-  transition: .4s;
+  transition: 0.4s;
   height: 8rem;
   margin-bottom: 2rem;
 }
@@ -281,23 +278,29 @@ header .my-hero button:hover {
   - AJUSTAR MEJOR EL TEXTO AL TAMAÑO DE LA CARD
 */
 
-
-
 /* --------------------------------------------------------------------------------------------------------- */
 /* PROJECTS SECTION */
 /* --------------------------------------------------------------------------------------------------------- */
 
-#projects .card-project{
+#projects .card-project {
   background-color: #000;
   padding: 0.4rem;
   text-align: left;
   border-radius: var(--border-radius);
-  background: linear-gradient(203deg, #D714F5 15.19%, #F27D0B 30.3%, #D714F5 44.48%, #F27D0B 58.56%, #D714F5 73.77%, #F27D0B 90.83%);
+  background: linear-gradient(
+    203deg,
+    #d714f5 15.19%,
+    #f27d0b 30.3%,
+    #d714f5 44.48%,
+    #f27d0b 58.56%,
+    #d714f5 73.77%,
+    #f27d0b 90.83%
+  );
   border-radius: var(--border-radius);
   border-radius: var(--border-radius);
 }
 
-#projects .card-project .card-project-content{
+#projects .card-project .card-project-content {
   background: var(--background-black);
   width: 100%;
   height: 100%;
@@ -306,24 +309,77 @@ header .my-hero button:hover {
   margin: 0;
 }
 
-#projects .card-project .card-project-content a{
+#projects .card-project .card-project-content a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-#projects .card-project .card-project-content h2{
+#projects .card-project .card-project-content h2 {
   font-size: 3rem;
   margin-bottom: 3rem;
 }
 
-#projects .card-project .card-project-content p{
+#projects .card-project .card-project-content p {
   color: var(--text-color);
   word-wrap: break-word;
-  opacity: .7;
+  opacity: 0.7;
+}
+
+/* --------------------------------- */
+/* Carrusel para mis proyectos  */
+#projects #cards .project-list{
+  display: flex;
+  overflow-x: scroll;
+  padding: .5rem;
 }
 
 
+#projects #cards .project-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+#projects #cards .project-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+#projects #cards .project-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+#projects #cards .project-list .my-project-card{
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+
+#projects #cards .my-project-card:focus-within~.my-project-card, .my-project-card:hover~.my-project-card {
+  transform: translateX(130px);
+}
+
+
+#projects #cards .project-list .my-project-card:hover {
+    transform: translateY(-1rem);
+}
+
+#projects #cards .project-list .my-project-card:not(:first-child) {
+    margin-left: -130px;
+}
 
 
 
@@ -332,24 +388,20 @@ header .my-hero button:hover {
 /* RESPONSIVE DESIGN */
 /* --------------------------------------------------------------------------------------------------------- */
 
-
 @media screen and (max-width: 985px) {
-  header .my-hero #name {
+  #header .my-hero #name {
     font-size: 5rem;
   }
-
 }
 
-
 @media screen and (max-width: 768px) {
-  header .my-hero #name {
+  #header .my-hero #name {
     font-size: 3rem;
   }
 }
 
-
 @media screen and (max-width: 580px) {
-  header .my-hero #name {
+  #header .my-hero #name {
     font-size: 2rem;
   }
 }
