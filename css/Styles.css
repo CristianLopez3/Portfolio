@@ -328,26 +328,31 @@ h2 {
 
 /* --------------------------------- */
 /* Carrusel para mis proyectos  */
+
 #projects #cards .project-list{
   display: flex;
   overflow-x: scroll;
-  padding: .5rem;
+  padding: 2rem;
 }
 
-
 #projects #cards .project-list::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 #projects #cards .project-list::-webkit-scrollbar-thumb {
-  background: #201c29;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+  background: linear-gradient(
+    90deg,
+    #ea604c80 40.97%,
+    #d714f580 84.42%
+  );
+    border-radius: .7rem;
+ 
 }
 
 #projects #cards .project-list::-webkit-scrollbar-track {
-    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+    background: #ffffff30;
+    border-radius: .7rem;
 }
 
 #projects #cards .project-list .my-project-card{
@@ -355,9 +360,9 @@ h2 {
   width: 400px;
   min-width: 250px;
   padding: 1.5rem;
-  border-radius: 16px;
-  background: #17141d;
-  box-shadow: -1rem 0 3rem #000;
+  border-radius: 1rem;
+  background: var(--gray);
+  box-shadow: -1rem 0 3rem #00000086;
   display: flex;
   flex-direction: column;
   transition: .2s;
@@ -365,10 +370,12 @@ h2 {
   scroll-snap-align: start;
   clear: both;
   position: relative;
+  color: var(--text-color);
 }
 
 
-#projects #cards .my-project-card:focus-within~.my-project-card, .my-project-card:hover~.my-project-card {
+#projects #cards .my-project-card:focus-within~.my-project-card, 
+.my-project-card:hover~.my-project-card {
   transform: translateX(130px);
 }
 
@@ -378,7 +385,7 @@ h2 {
 }
 
 #projects #cards .project-list .my-project-card:not(:first-child) {
-    margin-left: -130px;
+    margin-left: -120px;
 }
 
 
