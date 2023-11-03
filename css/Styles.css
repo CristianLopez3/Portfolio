@@ -389,6 +389,107 @@ h2 {
 }
 
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* CONTACT SECTION */
+/* --------------------------------------------------------------------------------------------------------- */
+
+#contact {
+
+  color: var(--text-color);
+  position: relative;
+
+  /* first article */
+  & article.left {
+    padding: 2rem;
+
+    & h2 {
+      font-weight: 300;
+      margin-bottom: 2rem;
+      & span{
+        font-weight: 650;
+        color: var(--pink);
+      }
+    }
+    
+    & p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  }
+
+  & article.right {
+    
+    /* cards */
+    & .social-net{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--background-opacity);
+      text-align: right;
+      vertical-align:middle;
+      border-radius: var(--border-radius);
+      margin-bottom: 3rem;
+
+      & .red {
+        padding: 1.5rem;
+        border-right: solid #fff;
+        width: 25%;
+        text-align: center;
+
+        & svg path {
+          fill: var(--orange);
+          color: var(--orange);
+        }
+      }
+
+      & .content {
+        width: 100%;
+        border-radius: 0 1.3rem 1.3rem 0 ;
+        padding: 1.5rem;
+        background: linear-gradient(270deg, rgba(215, 20, 245, 0.17) 0.04%, rgba(231, 111, 0, 0.17) 99.15%);
+
+        & a  {
+          color: var(--text-color);
+          text-decoration: none;
+          & h3 {font-weight: 400;}
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+#contact::before {
+  content: "";
+  height: 900px;
+  width: 900px;
+  background: url(../img/back-blur.png);
+  background-size: cover;
+  position: absolute;
+  z-index: -10;
+  left: -215px;
+  top: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------------------------------------------------- */
+
+footer{
+  margin-top: 13rem;
+  padding: 2rem;
+  text-align: center;
+  background: var(--background-opacity);
+
+  & p {
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+}
+
 
 
 /* --------------------------------------------------------------------------------------------------------- */
