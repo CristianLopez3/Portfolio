@@ -72,16 +72,21 @@ h2 {
   position: relative;
   z-index: 1;
 
-  & nav ul li a.nav-link {
-    color: var(--text-color);
-    position: relative;
-    z-index: 80;
-    margin: 0 10px;
+  & nav ul li {
+    & a.nav-link {
+      color: var(--text-color);
+      position: relative;
+      z-index: 80;
+      margin: 0 10px;
+    }
+
+    & a:hover {
+      color: var(--orange) !important;
+    } 
+    
   }
 
-  & nav ul li a:hover {
-    color: var(--orange) !important;
-  } 
+ 
 
   & .my-hero {
     padding: 13% 0;
@@ -89,9 +94,7 @@ h2 {
     margin: 0 auto;
     text-align: center;
 
-    & h2 {
-      font-weight: 300;
-    }
+    & h2 { font-weight: 300 }
 
     & #name {
       padding: 15px 0;
@@ -225,6 +228,26 @@ h2 {
   & h2 {
     color: var(--pink);
     text-align: center;
+  }
+
+  & .card-tech-container {
+
+    padding: 2rem;
+
+    & .tech-card {
+      background: var(--background-opacity);
+      text-align: center;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      color: var(--text-color);
+
+      & img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: .5rem;
+      }
+    }
+
   }
 }
 
