@@ -47,3 +47,11 @@ $(document).ready(function () {
     ],
   });
 });
+
+// Download function 
+
+const $btnDownload = document.getElementById('downlaod');
+
+const dowload = () => {
+  
+}

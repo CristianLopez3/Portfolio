@@ -58,7 +58,15 @@ h2 {
 .span-pink {
   font-style: italic;
   color: var(--pink);
-  font-weight: 7      00;
+  font-weight: 7 00;
+}
+
+.orange {
+  color: var(--orange)
+}
+
+.pink {
+  color: var(--pink)
 }
 
 
@@ -88,7 +96,7 @@ h2 {
 
   }
 
-  & .home-hero{
+  & .home-hero {
     height: 75vh;
     display: flex;
     justify-content: center;
@@ -321,6 +329,20 @@ h2 {
       & h2 {
         font-size: 3rem;
         margin-bottom: 3rem;
+
+        & span {
+          background: linear-gradient(90deg,
+              #ef7322 9.98%,
+              #d714f5 25.54%,
+              #ea604c 40.97%,
+              #d714f5 55.18%,
+              #f27d0b 72.75%,
+              #d714f5 84.42%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          /* aplicamos los estilos para el clip en el text */
+          -webkit-text-fill-color: transparent;
+        }
       }
 
       & p {
@@ -341,7 +363,7 @@ h2 {
       padding: 2rem;
 
       & .my-project-card {
-        height: 350px;
+        height: 400px;
         width: 400px;
         min-width: 250px;
         padding: 1.5rem;
@@ -357,7 +379,7 @@ h2 {
         position: relative;
         color: var(--text-color);
 
-        & p{
+        & p {
           font-size: 0.9rem;
         }
 
@@ -370,10 +392,12 @@ h2 {
           text-decoration: none;
           font-weight: 700;
           transition: .5s;
-          text-transform: uppercase   ;
+          text-transform: uppercase;
         }
 
-        & a:hover {     background: var(--pink);}
+        & a:hover {
+          background: var(--pink);
+        }
 
 
       }
