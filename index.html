@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio - practice</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
-
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- AOS ANIMATION -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Our style sheet -->
   <link rel="stylesheet" href="./css/Styles.css" />
 </head>
 
 <body>
   <!-- HEADER  -->
-  <header class="container" id="header">
+  <header class="container" id="header" data-aos="zoom-in"  data-aos-duration="1300" >
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -100,7 +101,7 @@
           I'm a <span>Backend Developer</span> eager to improve my skills
         </h1>
 
-        <button id="download">Download CV</button>
+        <a id="download" href="./CV_Cristian_Camilo_Lopez.pdf" download="./CV_Cristian_Camilo_Lopez.pdf" target="_blank" >DOWNLOAD CV</a>
       </div>
     </div>
 
@@ -110,34 +111,10 @@
 
   <!-- MAIN  -->
   <main>
-    <!-- KNOW ME SECTION -->
-    <section class="container" id="know-me">
-      <div class="row justify-content-center align-items-center">
-        <article class="col-lg-6 text-start know-me-area">
-          <h2>Know <span>Me</span></h2>
-          <p>
-            Hey there! Let me introduce myself. I'm Cristian, a junior
-            developer with a passion for
-            <span class="span-orange"> agile development</span>. I mainly work
-            on backend projects using <span class="span-orange">Java</span> ,
-            but I'm also pretty into web development, where I have a blast
-            creating cool websites with
-            <span class="span-orange">JavaScript</span> . I'm always stoked
-            about learning new stuff and diving into exciting projects that
-            challenge and expand my skills.
-          </p>
-        </article>
 
-        <article class="col-lg-6 justify-content-center know-me-avatar">
-          <figure>
-            <img src="./img/avatar.png" alt="my avatar" />
-          </figure>
-        </article>
-      </div>
-    </section>
 
     <!-- TECHNOLOGIES SECTION -->
-    <section class="container" id="technologies">
+    <section class="container" id="technologies" data-aos="zoom-in-down"   data-aos-duration="1300" >
 
       <h2>Technologies & Tools</h2>
 
@@ -223,8 +200,34 @@
 
     </section>
 
+        <!-- KNOW ME SECTION -->
+        <section class="container" id="know-me" data-aos="zoom-in-up"  data-aos-duration="1300"  >
+          <div class="row justify-content-center align-items-center">
+            <article class="col-lg-6 text-start know-me-area">
+              <h2>Know <span>Me</span></h2>
+              <p>
+                Hey there! Let me introduce myself. I'm Cristian, a junior
+                developer with a passion for
+                <span class="span-orange"> agile development</span>. I mainly work
+                on backend projects using <span class="span-orange">Java</span> ,
+                but I'm also pretty into web development, where I have a blast
+                creating cool websites with
+                <span class="span-orange">JavaScript</span> . I'm always stoked
+                about learning new stuff and diving into exciting projects that
+                challenge and expand my skills.
+              </p>
+            </article>
+    
+            <article class="col-lg-6 justify-content-center know-me-avatar">
+              <figure>
+                <img src="./img/avatar.png" alt="my avatar" />
+              </figure>
+            </article>
+          </div>
+        </section>
+
     <!-- PROJECTS SECTION -->
-    <section class="container" id="projects">
+    <section class="container" id="projects" data-aos="zoom-in-right"  data-aos-duration="1300"  >
       <div class="row">
         <article class="col-lg-5 p-4">
           <!-- PRESENTATION CARD -->
@@ -312,7 +315,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="container" id="contact">
+    <section class="container" id="contact" data-aos="zoom-in-left"  data-aos-duration="1300"  >
       <div class="row">
 
         <article class="col-lg-6 col-md-6 col-sm-12 left">
@@ -417,13 +420,15 @@
   </main>
 
   <!-- FOOTER  -->
-  <footer class="container ">
+  <footer class="container " data-aos="zoom-in-up"  data-aos-duration="1300"  >
     <p>&copy; Copyright by Cristian Camilo Lopez Martinez </p>
   </footer>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Aos animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="./lib/bootstrap/js/bootstrap.js"></script>
   <script src="./js/Main.js"></script>

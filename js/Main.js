@@ -48,6 +48,9 @@ $(document).ready(function () {
   });
 });
 
+
+// Transition for the name span
+
 const textEl = document.getElementById('name');
 let text = "Cristian Lopez";
 let idx = 1; // Valor en el que se va a incrementar las letras
@@ -70,4 +73,6 @@ function writeText() {
     }
 }
 
-console.log(text);
+
+// AOS INITIATION
+AOS.init();
