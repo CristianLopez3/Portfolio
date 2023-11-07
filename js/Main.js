@@ -48,10 +48,26 @@ $(document).ready(function () {
   });
 });
 
-// Download function 
+const textEl = document.getElementById('name');
+let text = "Cristian Lopez";
+let idx = 1; // Valor en el que se va a incrementar las letras
+let transitionComplete = false; // Bandera para controlar si la transición ya ha ocurrido
 
-const $btnDownload = document.getElementById('downlaod');
+writeText();
 
-const dowload = () => {
-  
+function writeText() {
+
+    if (!transitionComplete) {
+        textEl.innerText = text.slice(0, idx) + "|";
+        idx++;
+
+        if (idx > text.length) {
+            transitionComplete = true; // Marcar la transición como completa
+            textEl.innerText = text.substring(0, text.length );
+        }
+
+        setTimeout(writeText, 200);
+    }
 }
+
+console.log(text);
