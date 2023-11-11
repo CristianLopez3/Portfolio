@@ -14,33 +14,57 @@
   <link rel="stylesheet" href="./css/Styles.css" />
 </head>
 
-<body>
+<body id="my-landing">
   <!-- HEADER  -->
-  <header class="container" id="header" >
+  <header class="container" id="header">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Onorded list for sections, replace values in href -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#know-me">Know me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#technologies">Technologies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+
+        <!-- Boton del responsive -->
+
+        <nav class="navbar ">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <img src="./img/commit.svg" alt="">
+            </button>
+
+            <div class="all-offcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+
+              <div class="offcanvas-header my-offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="span-pink">Developer</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="my-offcanvas offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#technologies">Technologies</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#know-me">Know me</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true" href="#contact">Contact</a>
+                  </li>
+
+
+                </ul>
+                
+              </div>
+            </div>
+
+          </div>
+        </nav>
 
         <!-- GITHUB ICON -->
         <a class="navbar-brand gap" href="https://github.com/CristianLopez3">
@@ -101,7 +125,8 @@
           I'm a <span>Backend Developer</span> eager to improve my skills
         </h1>
 
-        <a id="download" href="./CV_Cristian_Camilo_Lopez.pdf" download="./CV_Cristian_Camilo_Lopez.pdf" target="_blank" >DOWNLOAD CV</a>
+        <a id="download" href="./CV_Cristian_Camilo_Lopez.pdf" download="./CV_Cristian_Camilo_Lopez.pdf"
+          target="_blank">DOWNLOAD CV</a>
       </div>
     </div>
 
@@ -114,7 +139,7 @@
 
 
     <!-- TECHNOLOGIES SECTION -->
-    <section class="container" id="technologies" data-aos="zoom-in-down"   data-aos-duration="1500" >
+    <section class="container" id="technologies" data-aos="flip-up" data-aos-duration="1500">
 
       <h2>Technologies & Tools</h2>
 
@@ -200,36 +225,36 @@
 
     </section>
 
-        <!-- KNOW ME SECTION -->
-    <section class="container" id="know-me" data-aos="zoom-in-up"  data-aos-duration="1500"  >
-          <div class="row justify-content-center align-items-center">
-            <article class="col-lg-6 text-start know-me-area">
-              <h2>Know <span>Me</span></h2>
-              <p>
-                Hey there! Let me introduce myself. I'm Cristian, a junior
-                developer with a passion for
-                <span class="span-orange"> agile development</span>. I mainly work
-                on backend projects using <span class="span-orange">Java</span> ,
-                but I'm also pretty into web development, where I have a blast
-                creating cool websites with
-                <span class="span-orange">JavaScript</span> . I'm always stoked
-                about learning new stuff and diving into exciting projects that
-                challenge and expand my skills.
-              </p>
-            </article>
-    
-            <article class="col-lg-6 justify-content-center know-me-avatar">
-              <figure>
-                <img src="./img/avatar.png" alt="my avatar" />
-              </figure>
-            </article>
-          </div>
+    <!-- KNOW ME SECTION -->
+    <section class="container" id="know-me" >
+      <div class="row justify-content-center align-items-center">
+        <article class="col-lg-6 text-start know-me-area" data-aos="fade-right" data-aos-duration="1500">
+          <h2>Know <span>Me</span></h2>
+          <p>
+            Hey there! Let me introduce myself. I'm Cristian, a junior
+            developer with a passion for
+            <span class="span-orange"> agile development</span>. I mainly work
+            on backend projects using <span class="span-orange">Java</span> ,
+            but I'm also pretty into web development, where I have a blast
+            creating cool websites with
+            <span class="span-orange">JavaScript</span> . I'm always stoked
+            about learning new stuff and diving into exciting projects that
+            challenge and expand my skills.
+          </p>
+        </article>
+
+        <article class="col-lg-6 justify-content-center know-me-avatar" data-aos="fade-left" data-aos-duration="1500">
+          <figure>
+            <img src="./img/avatar.png" alt="my avatar" />
+          </figure>
+        </article>
+      </div>
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="container" id="projects" data-aos="zoom-in-right"  data-aos-duration="1500"  >
+    <section class="container" id="projects" >
       <div class="row">
-        <article class="col-lg-5 p-4">
+        <article class="col-lg-5 p-4" data-aos="zoom-in-right" data-aos-duration="1500">
           <!-- PRESENTATION CARD -->
           <div class="card-project">
             <div class="card-project-content">
@@ -315,10 +340,10 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="container" id="contact" data-aos="zoom-in-left"  data-aos-duration="1500"  >
+    <section class="container" id="contact" data-aos="zoom-in-left" data-aos-duration="1500">
       <div class="row">
 
-        <article class="col-lg-6 col-md-6 col-sm-12 left">
+        <article class="col-lg-6 col-md-12 col-sm-12 left">
           <h2>
             It's now <br>
             <span>Contact Me</span>
@@ -329,7 +354,7 @@
           </p>
         </article>
 
-        <article class="col-lg-6 col-md-6 col-sm-12 right">
+        <article class="col-lg-6 col-md-12 col-sm-12 right">
           <!-- Gmail card -->
           <div class="social-net">
 
@@ -420,9 +445,46 @@
   </main>
 
   <!-- FOOTER  -->
-  <footer class="container " data-aos="zoom-in-up"  data-aos-duration="1500"  >
-    <p>&copy; <span class="span-orange">Copyright</span> by Cristian Camilo Lopez Martinez - <span class="span-pink">MIT</span> License</p>
+  <footer class="container ">
+    <p>&copy; <span class="span-orange"> Copyright</span> by Cristian Camilo Lopez Martinez - <span
+        class="span-pink">MIT</span> License</p>
   </footer>
+
+  <!-- 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+  <!-- 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+  <!-- MODALSE SECTION  -->
+  <!-- 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+  <!-- 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+        lists, etc.
+      </div>
+
+      <ul class="dropdown-menu">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#know-me">Know me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#technologies">Technologies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

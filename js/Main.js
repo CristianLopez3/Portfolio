@@ -43,15 +43,13 @@ $(document).ready(function () {
           slidesToScroll: 1,
         },
       },
-  
     ],
   });
 });
 
-
 // Transition for the name span
 
-const textEl = document.getElementById('name');
+const textEl = document.getElementById("name");
 let text = "Cristian Lopez";
 let idx = 1; // Valor en el que se va a incrementar las letras
 let transitionComplete = false; // Bandera para controlar si la transición ya ha ocurrido
@@ -59,20 +57,35 @@ let transitionComplete = false; // Bandera para controlar si la transición ya h
 writeText();
 
 function writeText() {
+  if (!transitionComplete) {
+    textEl.innerText = text.slice(0, idx) + "|";
+    idx++;
 
-    if (!transitionComplete) {
-        textEl.innerText = text.slice(0, idx) + "|";
-        idx++;
-
-        if (idx > text.length) {
-            transitionComplete = true; // Marcar la transición como completa
-            textEl.innerText = text.substring(0, text.length );
-        }
-
-        setTimeout(writeText, 200);
+    if (idx > text.length) {
+      transitionComplete = true; // Marcar la transición como completa
+      textEl.innerText = text.substring(0, text.length);
     }
-}
 
+    setTimeout(writeText, 200);
+  }
+}
 
 // AOS INITIATION
 AOS.init();
+
+// NAVBAR RESPONSIVE
+const navbar = document.getElementById("offcanvasNavbar");
+const body = document.getElementById("my-landing");
+let links = document.querySelectorAll(".nav-link");
+console.log(links);
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const backdrop = document.querySelector(".offcanvas-backdrop");
+    console.log(backdrop);
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+      backdrop.classList.remove("show");
+      body.style.overflow = "scroll";
+    }
+  });
+});
