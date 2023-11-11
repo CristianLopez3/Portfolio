@@ -645,13 +645,16 @@ h2 {
 
 footer {
   margin-top: 2rem;
-  padding: 4rem;
+  padding: 4rem 0 ;
   text-align: center;
   /* background: var(--background-opacity); */
 
   & p {
+    display: block;
+    margin: 0 auto;
     color: var(--text-color);
     font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -939,3 +942,40 @@ footer {
     top: 1;
   }
 }
+
+@media screen and (max-width: 380px) {
+  html{font-size: 10px;}
+
+
+  & #header {
+
+    &  img, svg  {
+      width: 30px;
+    }
+
+
+    & .my-hero {
+      & a {
+        padding: 1.5rem 3rem  ;
+        font-family: 9rem;
+       
+      }
+    }
+  }
+
+  #contact {
+
+    & .red {
+
+      & svg {
+        display: flex;
+        place-items: center;
+        width: 30px;
+      }
+    }
+  }
+
+
+
+}
+
