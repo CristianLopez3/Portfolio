@@ -4,10 +4,10 @@
 <!-- PROJECT LOGO -->
 
 <div align="center">
-  <h3 align="center">My personal Portfolio </h3>
+  <h3 align="center">My personal Portfolio 🏗️ </h3>
 
   <p align="center">
-    Please check my project and give your feedback
+    Please check my project and give your feedback, visit the site <a href="https://cristianlopez3.github.io/Portfolio/">HERE 🔑</a>
   </p>
 </div>
 
@@ -16,7 +16,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project 👓
 
 In this repository you can find my code in the road to build a personal page to show me at the world, if you can give your feedback I will be very grateful to you 
 
@@ -31,14 +31,16 @@ In this repository you can find my code in the road to build a personal page to 
 
 This is an example of how to list things you need to use the software and how to install them.
 * git
-  ```
+  
+  ```git
   git -version
   ```
 
 ### Installation
 
+* Clone the repo 🌀
 
-1. Clone the repo
+
    ```sh
    git clone https://github.com/CristianLopez3/Portfolio.git
    ```
@@ -72,7 +74,7 @@ Distributed under the MIT License.
 
 
 <!-- CONTACT -->
-## Contact
+## Contact 📱
 
 
 Project Link: [https://github.com/CristianLopez3](https://github.com/CristianLopez3)
@@ -82,7 +84,7 @@ Project Link: [https://github.com/CristianLopez3](https://github.com/CristianLop
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments 📝
 
 Look at the content to guie:
 * Jon Mircha
