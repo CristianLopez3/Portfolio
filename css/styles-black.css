@@ -34,6 +34,20 @@ html {
 body {
   background: var(--background-black);
   overflow-x: hidden;
+  position: relative;
+  transition: .5s;
+}
+
+#change-theme{
+  border: none;
+  position: fixed;
+  background-color: #f27e0ba2;
+  padding: 2rem;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 5%;
+  transition: 0.3s;
+  z-index: 10000;
 }
 
 section {
@@ -669,6 +683,10 @@ footer {
 @media screen and (max-width: 985px) {
   body {
     overflow-x: hidden !important;
+  }
+
+  #change-theme{
+    padding: 1rem;
   }
 
   #header {

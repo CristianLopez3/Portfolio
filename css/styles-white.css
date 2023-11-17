@@ -34,6 +34,25 @@ html {
 body {
   background: var(--background-black);
   overflow-x: hidden;
+  transition: .5s;
+}
+
+body {
+  background: var(--background-black);
+  overflow-x: hidden;
+  position: relative;
+}
+
+#change-theme{
+  border: none;
+  position: fixed;
+  background-color: #d714f594;
+  padding: 2rem;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 5%;
+  transition: 0.3s;
+  z-index: 10000;
 }
 
 section {
@@ -69,6 +88,12 @@ h2 {
   color: var(--pink);
 }
 
+.bg-black{
+  background-color: var(--background-opacity);
+  border-radius: 30%;
+  border: none;
+  outline: none;
+}
 /* --------------------------------------------------------------------------------------------------------- */
 /* #header STYES */
 /* --------------------------------------------------------------------------------------------------------- */
@@ -672,7 +697,13 @@ footer {
 @media screen and (max-width: 985px) {
   body {
     overflow-x: hidden !important;
+    padding: 0  ;
   }
+
+  
+#change-theme{
+  padding: 1rem;
+}
 
   #header {
     & .all-offcanvas {

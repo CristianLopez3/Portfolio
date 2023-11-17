@@ -93,14 +93,17 @@ links.forEach((link) => {
 
 // CHANGE THEME
 const styleSheets = ['./css/styles-black.css', './css/styles-white.css'];
+const icons = ['./img/sun.svg', './img/moon.svg'];
 let currentSheet = 0;
-
 const btnChangeTheme = document.getElementById("change-theme"); // Cambié el ID a "change-theme"
 
 
-function changeTheme() {
+const changeTheme = () => {
   const styleSheet = document.getElementById("styles-link");
+  const iconTheme = document.getElementById("icon-theme");
   currentSheet = (currentSheet + 1) % styleSheets.length;
+  iconTheme.src = icons[currentSheet];
   styleSheet.href = styleSheets[currentSheet];
 }
+
 btnChangeTheme.addEventListener("click", changeTheme); // No uses paréntesis aquí
