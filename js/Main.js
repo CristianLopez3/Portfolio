@@ -89,3 +89,18 @@ links.forEach((link) => {
     }
   });
 });
+
+
+// CHANGE THEME
+const styleSheets = ['./css/styles-black.css', './css/styles-white.css'];
+let currentSheet = 0;
+
+const btnChangeTheme = document.getElementById("change-theme"); // Cambié el ID a "change-theme"
+
+
+function changeTheme() {
+  const styleSheet = document.getElementById("styles-link");
+  currentSheet = (currentSheet + 1) % styleSheets.length;
+  styleSheet.href = styleSheets[currentSheet];
+}
+btnChangeTheme.addEventListener("click", changeTheme); // No uses paréntesis aquí
