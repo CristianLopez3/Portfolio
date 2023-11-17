@@ -783,6 +783,8 @@ footer {
   }
 }
 
+
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 13px;
@@ -794,9 +796,11 @@ footer {
   }
 
   #header {
+
     & .my-hero {
-      #name {
-        font-size: 3rem;
+      & h2 {font-size: 2.5rem; line-height: 4rem;}
+      & #name {
+        font-size: 3.5rem;
       }
     }
   }
@@ -880,6 +884,11 @@ footer {
   }
 
   #header {
+
+    & .icon-resp, .icon-resp>*{
+      width: 2.5rem;
+    }
+
     & .all-offcanvas {
       width: 80%;
       right: 0;
@@ -891,8 +900,9 @@ footer {
     }
 
     & .my-hero {
+      & h2 {font-size: 2.4rem;}
       & #name {
-        font-size: 3rem;
+        font-size: 3.4rem;
       }
     }
   }
